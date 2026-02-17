@@ -1,0 +1,13 @@
+# Data & Database (Too large for Git)
+data/
+chroma_db/
+*.pdf
+*.png
+*.jpg
+
+# Python & Environment
+__pycache__/
+*.py[cod]
+venv/
+.env
+.DS_Store
