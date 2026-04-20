@@ -3,7 +3,6 @@ import os
 DATA_PATH = "./data"
 
 def get_subjects_structure():
-    """Scans the data folder to populate the Sidebar Dropdowns dynamically."""
     structure = {}
     if os.path.exists(DATA_PATH):
         for sem in sorted(os.listdir(DATA_PATH)):
