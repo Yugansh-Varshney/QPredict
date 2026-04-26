@@ -9,8 +9,9 @@ import fitz
 from ocrmac import ocrmac
 import time
 
-DATA_PATH = "./data"
-DB_PATH = "./chroma_db"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_PATH = os.path.join(BASE_DIR, "data")
+DB_PATH = os.path.join(BASE_DIR, "chroma_db")
 
 PAGE_MAPPINGS = {
     "Semester_5.pdf": {

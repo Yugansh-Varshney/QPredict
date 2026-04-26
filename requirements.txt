@@ -10,3 +10,5 @@ pandas
 numpy
 langchain-chroma<1.0.0
 langchain-google-genai<3.0.0
+pymupdf
+ocrmac

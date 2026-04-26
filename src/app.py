@@ -16,8 +16,9 @@ from retrieval import get_rag_chain, predict_exam_trends
 
 load_dotenv()
 
-DB_PATH = "./chroma_db"
-DATA_PATH = "./data"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DB_PATH = os.path.join(BASE_DIR, "chroma_db")
+DATA_PATH = os.path.join(BASE_DIR, "data")
 
 st.set_page_config(page_title="QPredict", page_icon="🎓", layout="wide")
 
